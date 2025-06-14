@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ filename }} View AIR condition</title>
+</head>
+<body>
+    <h2>Measurement Results</h2>
+    <table border="1">
+        {% for row in table %}
+            <tr>
+                {% for cell in row %}
+                    <td>{{ cell }}</td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <a href="/">← return to main</a>
+</body>
+</html>

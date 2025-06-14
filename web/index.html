@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IoT Air Condition Manager</title>
+</head>
+<body>
+    <h1>IoT Air Condition Manager</h1>
+    <ul>
+    {% for file in files %}
+        <li>
+            {{ file }}
+            [<a href="/download/{{ file }}">download</a>]
+            {% if file.endswith('.csv') %}
+                [<a href="/view/{{ file }}">view</a>]
+            {% endif %}
+        </li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
