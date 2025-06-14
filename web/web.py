@@ -3,7 +3,7 @@ import os
 import csv
 
 app = Flask(__name__, template_folder='.')
-FOLDER_PATH = '/home/sdhbbb/workspace/FinalT/csv_database'
+FOLDER_PATH = '/home/workspace/csv_database' # input your database folder name
 
 @app.route('/')
 def index():
